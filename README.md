@@ -1,4 +1,6 @@
 SwinNetSim
 ==========
+######Check download speed of AWS regions
 
-SwinNetSim
+
+A small piece of code to test AWS Cloud download service.
