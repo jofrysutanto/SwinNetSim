@@ -9,7 +9,7 @@ import com.amazonaws.util.json.JSONObject;
 
 public class TestDownload {
 		
-	public final static String SERVER_URL = "http://ec2-54-196-212-34.compute-1.amazonaws.com:3000/";
+	public final static String SERVER_URL = "http://ec2-54-196-212-34.compute-1.amazonaws.com/";
 	public final static String SMALL_FILE = "texter/small";
 	public final static String MEDIUM_FILE = "texter/medium";
 	public final static String LARGE_FILE = "texter/large";
@@ -29,10 +29,6 @@ public class TestDownload {
 		System.out.println("=====================================================");
 		System.out.println("Downloading medium files...");
 		testDownload(TestDownload.MEDIUM_FILE);
-		
-		System.out.println("=====================================================");
-		System.out.println("Downloading large files...");
-		testDownload(TestDownload.LARGE_FILE);
 		
 		System.out.println("=====================================================");
 		System.out.println("Downloading x-large files...");
