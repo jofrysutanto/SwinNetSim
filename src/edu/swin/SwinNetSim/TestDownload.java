@@ -15,7 +15,7 @@ public class TestDownload {
 	public final static String LARGE_FILE = "texter/large";
 	public final static String XLARGE_FILE = "texter/xlarge";
 	
-	public final static int REPEAT = 100;
+	public final static int REPEAT = 50;
 	
 	public static void main(String [] args) throws IOException, JSONException {		
 		System.out.println("=====================================================");
