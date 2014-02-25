@@ -35,9 +35,7 @@ public class TestDownload {
 		System.out.println("Downloading large files...");
 		testDownload(TestDownload.XLARGE_FILE);
 		
-		System.out.println("=====================================================");
-		System.out.println("Downloading x-large files...");
-		testDownload(TestDownload.XXLARGE_FILE);
+
 	}
 
 	private static void testDownload(String testFile) throws IOException,
