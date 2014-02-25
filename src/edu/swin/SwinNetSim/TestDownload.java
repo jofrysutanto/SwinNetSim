@@ -14,6 +14,7 @@ public class TestDownload {
 	public final static String MEDIUM_FILE = "texter/medium";
 	public final static String LARGE_FILE = "texter/large";
 	public final static String XLARGE_FILE = "texter/xlarge";
+	public final static String XXLARGE_FILE = "texter/xxlarge";
 	
 	public final static int REPEAT = 50;
 	
@@ -31,8 +32,12 @@ public class TestDownload {
 		testDownload(TestDownload.MEDIUM_FILE);
 		
 		System.out.println("=====================================================");
-		System.out.println("Downloading x-large files...");
+		System.out.println("Downloading large files...");
 		testDownload(TestDownload.XLARGE_FILE);
+		
+		System.out.println("=====================================================");
+		System.out.println("Downloading x-large files...");
+		testDownload(TestDownload.XXLARGE_FILE);
 	}
 
 	private static void testDownload(String testFile) throws IOException,
