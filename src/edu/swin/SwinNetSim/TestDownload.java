@@ -9,14 +9,15 @@ import com.amazonaws.util.json.JSONObject;
 
 public class TestDownload {
 		
-	public final static String SERVER_URL = "http://ec2-54-196-212-34.compute-1.amazonaws.com/";
+	//public final static String SERVER_URL = "http://ec2-54-196-212-34.compute-1.amazonaws.com/";
+	public final static String SERVER_URL = "http://ec2-54-206-57-21.ap-southeast-2.compute.amazonaws.com/";
 	public final static String SMALL_FILE = "texter/small";
 	public final static String MEDIUM_FILE = "texter/medium";
 	public final static String LARGE_FILE = "texter/large";
 	public final static String XLARGE_FILE = "texter/xlarge";
 	public final static String XXLARGE_FILE = "texter/xxlarge";
 	
-	public final static int REPEAT = 50;
+	public final static int REPEAT = 30;
 	
 	public static void main(String [] args) throws IOException, JSONException {		
 		System.out.println("=====================================================");
@@ -35,7 +36,9 @@ public class TestDownload {
 		System.out.println("Downloading large files...");
 		testDownload(TestDownload.XLARGE_FILE);
 		
-
+		System.out.println("=====================================================");
+		System.out.println("Downloading x-large files...");
+		testDownload(TestDownload.XXLARGE_FILE);
 	}
 
 	private static void testDownload(String testFile) throws IOException,
